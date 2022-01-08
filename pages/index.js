@@ -1,3 +1,17 @@
+import PageIllustrationSvg from "../src/assets/svg/PageIllustrationSvg";
+import HeroHome from "../src/partials/HeroHome";
+
+// Page content
 export default function Home() {
-  return <div>Home page</div>;
+  return (
+    <main className="flex-grow">
+      {/* Page Illustration */}
+      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
+        <PageIllustrationSvg />
+      </div>
+
+      {/* Page sections */}
+      <HeroHome />
+    </main>
+  );
 }

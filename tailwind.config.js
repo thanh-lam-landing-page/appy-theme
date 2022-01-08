@@ -1,9 +1,6 @@
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: 'class',
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       boxShadow: {
@@ -71,9 +68,7 @@ module.exports = {
           900: "#702459",
         },
       },
-      outline: {
-        blue: "2px solid rgba(0, 112, 244, 0.5)",
-      },
+      outlineColor: { blue: "rgba(0, 112, 244, 0.5)" },
       spacing: {
         128: "32rem",
         "9/16": "56.25%",

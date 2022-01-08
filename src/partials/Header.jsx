@@ -59,7 +59,7 @@ const Header = () => {
   }, [darkMode]);
 
   return (
-    <header className="absolute w-full z-30">
+    <header className="absolute bg-transparent w-full z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -194,6 +194,7 @@ const Header = () => {
                 ref={mobileNav}
                 className="fixed top-0 h-screen z-20 left-0 w-full max-w-xs overflow-scroll bg-white dark:bg-gray-900 shadow-lg no-scrollbar">
                 <div className="py-6 pr-4 pl-4">
+                  <Image src={Logo.src} alt="logo" width="32px" height="32px" />
                   <ul>
                     <li>
                       <CustomLink
