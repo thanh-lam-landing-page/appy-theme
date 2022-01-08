@@ -1,0 +1,13 @@
+.form-switch {
+  input[type="checkbox"].light-switch {
+    + label {
+      @apply bg-teal-500;
+
+      > span:first-child {
+        .dark & {
+          left: 22px;
+        }
+      }
+    }
+  }
+}

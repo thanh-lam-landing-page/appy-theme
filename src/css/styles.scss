@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// Additional styles
+@import './additional-styles/toggle-switch.scss';
+@import './additional-styles/theme.scss';
+@import './additional-styles/utility-patterns.scss';
