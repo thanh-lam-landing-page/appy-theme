@@ -10,3 +10,13 @@
 .btn-sm {
   @apply px-4 py-2;
 }
+
+// Chrome, Safari and Opera
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
