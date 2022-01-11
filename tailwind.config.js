@@ -75,6 +75,10 @@ module.exports = {
         "3/4": "75%",
         "1/1": " 100%",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        "red-hat-display": ['"Red Hat Display"', "sans-serif"],
+      },
       fontSize: {
         xs: ["0.75rem", { lineHeight: "1.5" }],
         sm: ["0.875rem", { lineHeight: "1.5" }],
