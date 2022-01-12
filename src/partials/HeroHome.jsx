@@ -60,13 +60,13 @@ const HeroHome = () => {
             </div>
 
             {/* Mobile mockup */}
-            <div className="md:col-span-5 lg:col-span-5 text-center md:text-right">
+            <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">
               <div className="inline-flex relative justify-center items-center">
                 {/* Glow illustration */}
                 <GlowSvg className="absolute mr-12 mt-32 pointer-events-none -z-1 dark:opacity-40" />
                 {/* Image inside mockup */}
                 <div className="absolute">
-                  <Image src={PhoneImage} width={290} height={630} style={{ maxWidth: "84.33%" }} alt="Feature Illustration" />
+                  <Image src={PhoneImage} width={290} height={630} alt="Feature Illustration" />
                 </div>
                 {/* Iphone mockup */}
                 <Image
