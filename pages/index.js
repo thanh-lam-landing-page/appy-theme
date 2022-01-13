@@ -1,4 +1,5 @@
 import PageIllustrationSvg from "../src/assets/svg/PageIllustrationSvg";
+import Carousel from "../src/partials/Carousel";
 import HeroHome from "../src/partials/HeroHome";
 import Stats from "../src/partials/Stats";
 
@@ -14,6 +15,7 @@ export default function Home() {
       {/* Page sections */}
       <HeroHome />
       <Stats />
+      <Carousel />
     </main>
   );
 }

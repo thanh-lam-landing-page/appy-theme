@@ -22,6 +22,7 @@ button:focus,
   }
 }
 
+// Light switch
 .form-switch {
   input[type="checkbox"].light-switch {
     + label {
@@ -31,6 +32,40 @@ button:focus,
         .dark & {
           left: 22px;
         }
+      }
+    }
+  }
+}
+
+.translate-z-0 {
+  transform: translateZ(0);
+}
+
+// Custom swiper styles
+.carousel {
+  &.swiper-container {
+    @apply overflow-visible;
+  }
+
+  .swiper-slide {
+    img {
+      opacity: 0.32;
+    }
+
+    > div > div {
+      @apply opacity-0;
+    }
+
+    &.swiper-slide-active,
+    &.swiper-slide-duplicate-active {
+      @apply shadow-2xl;
+
+      img {
+        @apply opacity-100;
+      }
+
+      > div > div {
+        @apply opacity-100;
       }
     }
   }
