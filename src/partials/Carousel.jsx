@@ -1,8 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+// @ts-nocheck
 import React, { useEffect } from "react";
+
+import Image1 from "../images/carousel-item-01.jpg";
+import Image2 from "../images/carousel-item-02.jpg";
+import Image3 from "../images/carousel-item-03.jpg";
+import Image4 from "../images/carousel-item-04.jpg";
+import Image5 from "../images/carousel-item-05.jpg";
 import Swiper, { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 Swiper.use([Autoplay, Navigation]);
+
+const listImg = [Image1, Image2, Image3, Image4, Image5];
 
 const Carousel = () => {
   useEffect(() => {
@@ -45,121 +54,25 @@ const Carousel = () => {
         <div className="carousel swiper">
           <div className="swiper-wrapper">
             {/* Carousel items */}
-            <div className="swiper-slide max-w-lg">
-              <img
-                src="/images/carousel-item-01.jpg"
-                className="transition-opacity duration-300 rounded-lg"
-                width="540"
-                height="460"
-                alt="Carousel item 01"
-              />
-              <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex flex-grow">
-                  <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
-                    Learn more
-                  </a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
-                  <a
-                    className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
-                    href="#0">
-                    Creative Services
-                  </a>
+            {listImg.map((img, index) => (
+              <div key={index} className="swiper-slide max-w-lg">
+                <img src={img.src} className="transition-opacity duration-300 rounded-lg" width="540" height="460" alt="Carousel item 01" />
+                <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
+                  <div className="flex flex-grow">
+                    <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
+                      Learn more
+                    </a>
+                  </div>
+                  <div className="absolute bottom-0 right-0 p-6">
+                    <a
+                      className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
+                      href="#0">
+                      Creative Services
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="swiper-slide max-w-lg">
-              <img
-                src="/images/carousel-item-02.jpg"
-                className="transition-opacity duration-300 rounded-lg"
-                width="540"
-                height="460"
-                alt="Carousel item 01"
-              />
-              <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex flex-grow">
-                  <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
-                    Learn more
-                  </a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
-                  <a
-                    className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
-                    href="#0">
-                    Creative Services
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide max-w-lg">
-              <img
-                src="/images/carousel-item-03.jpg"
-                className="transition-opacity duration-300 rounded-lg"
-                width="540"
-                height="460"
-                alt="Carousel item 01"
-              />
-              <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex flex-grow">
-                  <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
-                    Learn more
-                  </a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
-                  <a
-                    className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
-                    href="#0">
-                    Creative Services
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide max-w-lg">
-              <img
-                src="/images/carousel-item-04.jpg"
-                className="transition-opacity duration-300 rounded-lg"
-                width="540"
-                height="460"
-                alt="Carousel item 01"
-              />
-              <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex flex-grow">
-                  <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
-                    Learn more
-                  </a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
-                  <a
-                    className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
-                    href="#0">
-                    Creative Services
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide max-w-lg">
-              <img
-                src="/images/carousel-item-05.jpg"
-                className="transition-opacity duration-300 rounded-lg"
-                width="540"
-                height="460"
-                alt="Carousel item 01"
-              />
-              <div className="absolute inset-0 flex flex-col transition-opacity duration-300 translate-z-0">
-                <div className="flex flex-grow">
-                  <a className="inline-flex btn-sm text-white bg-teal-500 hover:bg-teal-400 mx-auto self-center" href="#0">
-                    Learn more
-                  </a>
-                </div>
-                <div className="absolute bottom-0 right-0 p-6">
-                  <a
-                    className="text-xs font-medium text-center text-white py-2 px-3 rounded-full bg-gray-900 bg-opacity-50 hover:bg-opacity-100 transition duration-150 ease-in-out"
-                    href="#0">
-                    Creative Services
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
