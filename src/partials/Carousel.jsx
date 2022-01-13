@@ -1,18 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-// @ts-nocheck
 import React, { useEffect } from "react";
-
-import Image from "next/image";
-import Image1 from "../images/carousel-item-01.jpg";
-import Image2 from "../images/carousel-item-02.jpg";
-import Image3 from "../images/carousel-item-03.jpg";
-import Image4 from "../images/carousel-item-04.jpg";
-import Image5 from "../images/carousel-item-05.jpg";
 import Swiper, { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 Swiper.use([Autoplay, Navigation]);
-
-const listImg = [Image1, Image2, Image3, Image4, Image5];
 
 const Carousel = () => {
   useEffect(() => {
