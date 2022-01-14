@@ -2,6 +2,7 @@ import PageIllustrationSvg from "../src/assets/svg/PageIllustrationSvg";
 import Carousel from "../src/partials/Carousel";
 import HeroHome from "../src/partials/HeroHome";
 import Stats from "../src/partials/Stats";
+import Tabs from "../src/partials/Tabs";
 
 // Page content
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroHome />
       <Stats />
       <Carousel />
+      <Tabs />
     </main>
   );
 }

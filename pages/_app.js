@@ -15,11 +15,14 @@ function MyApp({ Component, pageProps }) {
       once: true,
       disable: "phone",
       duration: 750,
-      easing: "ease-in-out-quart"
-    })
-  }, [])
+      easing: "ease-in-out-quart",
+    });
+  }, []);
 
   useEffect(() => {
+    document.querySelector("html").style.scrollBehavior = "auto";
+    window.scroll({ top: 0 });
+    document.querySelector("html").style.scrollBehavior = "";
     focusHandling("outline");
   }, [router.pathname]);
 
