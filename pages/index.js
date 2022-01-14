@@ -5,6 +5,7 @@ import PricingTables from '../src/partials/PricingTables';
 import Process from '../src/partials/Process';
 import Stats from '../src/partials/Stats';
 import Tabs from '../src/partials/Tabs';
+import TestimonialsBlocks from '../src/partials/TestimonialsBlocks';
 
 // Page content
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Tabs />
       <Process />
       <PricingTables />
+      <TestimonialsBlocks />
     </main>
   );
 }
