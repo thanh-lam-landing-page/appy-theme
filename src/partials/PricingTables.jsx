@@ -34,7 +34,9 @@ const PricingTables = () => {
           {/* Pricing tables */}
           <div className="max-w-xs mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-4 items-start sm:max-w-none md:max-w-2xl lg:max-w-none">
             {/* Pricing table 1 */}
-            <div className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500">
+            <div
+              className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500"
+              data-aos="fade-down">
               <div className="flex-grow mb-4 pb-4">
                 <div className="flex justify-between items-center mb-1">
                   <div className="text-xl font-bold font-red-hat-display">Yearly</div>
@@ -57,7 +59,10 @@ const PricingTables = () => {
             </div>
 
             {/* Pricing table 2 */}
-            <div className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500">
+            <div
+              className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500"
+              data-aos="fade-down"
+              data-aos-delay="150">
               <div className="flex-grow mb-4 pb-4">
                 <div className="flex justify-between items-center mb-1">
                   <div className="text-xl font-bold font-red-hat-display">Monthly</div>
@@ -77,7 +82,10 @@ const PricingTables = () => {
             </div>
 
             {/* Pricing table 3 */}
-            <div className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500">
+            <div
+              className="flex flex-col h-full p-6 rounded bg-white dark:bg-gray-800 shadow border-transparent dark:border-teal-500"
+              data-aos="fade-down"
+              data-aos-delay="300">
               <div className="flex-grow mb-4 pb-4">
                 <div className="flex justify-between items-center mb-1">
                   <div className="text-xl font-bold font-red-hat-display">Lifetime</div>

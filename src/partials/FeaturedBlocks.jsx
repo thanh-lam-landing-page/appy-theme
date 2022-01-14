@@ -47,7 +47,13 @@ const FeaturedBlocks = () => {
             className="max-w-xs mx-auto sm:max-w-none md:max-w-xl lg:max-w-none grid sm:grid-cols-2 gap-4 lg:gap-6 lg:grid-cols-4"
             data-aos-id-featbl>
             {features.map((feature, index) => (
-              <a key={index} className={`flex flex-col p-5 group text-white shadow-2xl ${feature.className}`} href="#0">
+              <a
+                key={index}
+                className={`flex flex-col p-5 group text-white shadow-2xl ${feature.className}`}
+                href="#0"
+                data-aos="fade-down"
+                data-aos-anchor="[data-aos-id-featbl]"
+                data-aos-delay={`${index * 100}`}>
                 <feature.icon />
                 <div className="font-red-hat-display text-xl font-extrabold tracking-tighter mb-1">{feature.title}</div>
                 <div className="flex-grow opacity-80 mb-4">{feature.content}</div>
