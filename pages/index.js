@@ -1,9 +1,10 @@
-import PageIllustrationSvg from "../src/assets/svg/PageIllustrationSvg";
-import Carousel from "../src/partials/Carousel";
-import HeroHome from "../src/partials/HeroHome";
-import Process from "../src/partials/Process";
-import Stats from "../src/partials/Stats";
-import Tabs from "../src/partials/Tabs";
+import Carousel from '../src/partials/Carousel';
+import HeroHome from '../src/partials/HeroHome';
+import PageIllustrationSvg from '../src/assets/svg/PageIllustrationSvg';
+import PricingTables from '../src/partials/PricingTables';
+import Process from '../src/partials/Process';
+import Stats from '../src/partials/Stats';
+import Tabs from '../src/partials/Tabs';
 
 // Page content
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Carousel />
       <Tabs />
       <Process />
+      <PricingTables />
     </main>
   );
 }
