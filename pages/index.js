@@ -1,4 +1,5 @@
 import Carousel from '../src/partials/Carousel';
+import FeaturedBlocks from '../src/partials/FeaturedBlocks';
 import HeroHome from '../src/partials/HeroHome';
 import PageIllustrationSvg from '../src/assets/svg/PageIllustrationSvg';
 import PricingTables from '../src/partials/PricingTables';
@@ -6,6 +7,7 @@ import Process from '../src/partials/Process';
 import Stats from '../src/partials/Stats';
 import Tabs from '../src/partials/Tabs';
 import TestimonialsBlocks from '../src/partials/TestimonialsBlocks';
+import Cta from '../src/partials/Cta';
 
 // Page content
 export default function Home() {
@@ -24,6 +26,8 @@ export default function Home() {
       <Process />
       <PricingTables />
       <TestimonialsBlocks />
+      <FeaturedBlocks />
+      <Cta />
     </main>
   );
 }
