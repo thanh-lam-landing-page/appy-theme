@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 import Image from "next/image";
 
-import ImgThumb from "../../images/video-thumb.jpg";
 import PlayButton from "../../images/play-button.svg";
 import { TabsList, TabsVideo } from "./data";
 
@@ -48,7 +47,9 @@ const Tabs = () => {
                         tab.index === category ? "text-teal-200 dark:text-teal-400" : "text-teal-500 dark:text-gray-400"
                       }`}
                     />
-                    <span className={`text-gray-600 dark:text-gray-300`}>{tab.text}</span>
+                    <span className={`${tab.index === category ? "text-white dark:text-teal-400" : "text-gray-600 dark:text-gray-300"}`}>
+                      {tab.text}
+                    </span>
                   </button>
                 ))}
               </div>

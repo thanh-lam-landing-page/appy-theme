@@ -1,6 +1,7 @@
 import PageIllustrationSvg from "../src/assets/svg/PageIllustrationSvg";
 import Carousel from "../src/partials/Carousel";
 import HeroHome from "../src/partials/HeroHome";
+import Process from "../src/partials/Process";
 import Stats from "../src/partials/Stats";
 import Tabs from "../src/partials/Tabs";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Stats />
       <Carousel />
       <Tabs />
+      <Process />
     </main>
   );
 }
